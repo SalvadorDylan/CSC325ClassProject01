@@ -1,16 +1,11 @@
 import * as React from 'react';
-import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
-import AppTheme from '../shared-theme/AppTheme';
-import AppAppBar from '../components/AppAppBar';
-import Hero from '../components/Hero';
-import LogoCollection from '../components/LogoCollection';
-import Highlights from '../components/Highlights';
-import Pricing from '../components/Pricing';
-import Features from '../components/Features';
-import Testimonials from '../components/Testimonials';
-import FAQ from '../components/FAQ';
-import Footer from '../components/Footer';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import Link from '@mui/material/Link';
+import NextLink from 'next/link';
+import ProTip from '@/components/ProTip';
+import Copyright from '@/components/Copyright';
 
 export default function Home() {
   return (
