@@ -4,9 +4,9 @@ import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import theme from '@/theme';
 import InitColorSchemeScript from '@mui/material/InitColorSchemeScript';
-import ModeSwitch from '@/components/ModeSwitch';
 import AppTheme from'@/shared-theme/AppTheme';
 import AppAppBar from '@/components/AppAppBar';
+import ModeSwitch from '@/components/ModeSwitch';
 
 export default function RootLayout(props: { children: React.ReactNode }) {
   return (
@@ -16,7 +16,8 @@ export default function RootLayout(props: { children: React.ReactNode }) {
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
           <ThemeProvider theme={theme}>
             {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-            <CssBaseline />
+            <CssBaseline enableColorScheme />
+            <AppAppBar /> { /*present across all pages */ }
             <ModeSwitch />
             {props.children}
           </ThemeProvider>
