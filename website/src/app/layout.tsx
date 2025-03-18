@@ -5,6 +5,8 @@ import CssBaseline from '@mui/material/CssBaseline';
 import theme from '@/theme';
 import InitColorSchemeScript from '@mui/material/InitColorSchemeScript';
 import ModeSwitch from '@/components/ModeSwitch';
+import AppTheme from'@/shared-theme/AppTheme';
+import AppAppBar from '@/components/AppAppBar';
 
 export default function RootLayout(props: { children: React.ReactNode }) {
   return (
